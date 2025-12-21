@@ -22,9 +22,6 @@ function repeatDouble(count) {
   }
 }
 
-repeat(5);
-repeatDouble(5);
-
 // 중복 코드 해결
 function repeat(count, callback) {
   for (let idx = 1; idx <= count; idx++) {
