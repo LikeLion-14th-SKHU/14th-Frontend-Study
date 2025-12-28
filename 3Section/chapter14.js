@@ -7,7 +7,7 @@ async function getData() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve({
-        name: '이정환',
+        name: '이아림',
         id: 'winterlood',
       });
     }, 1500);
