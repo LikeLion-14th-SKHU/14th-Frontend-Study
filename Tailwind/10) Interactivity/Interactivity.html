@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS CDN</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="m-20">
+  <div class="flex gap-5">
+    <label>
+      <input type="checkbox"> 동의합니다.
+    </label>
+    <label>
+      <input class="accent-pink-500" type="checkbox"> 동의합니다.
+    </label>
+  </div>
+  <hr class="my-10">
+  <div class="flex gap-5">
+    <label>
+      <input type="radio"> 동의합니다.
+    </label>
+  </div>
+  <hr class="my-10">
+  <div class="my-3">
+    <select class="appearance-none border border-blue-300 py-1 px-5 rounded-md outline-none shadow-md" name="" id="">
+      <option value="">선택하세요</option>
+      <option value="">대학생</option>
+      <option value="">고등학생</option>
+      <option value="">중학생</option>
+      <option value="">초등학생</option>
+    </select>
+  </div>
+  <div class="flex gap-5">
+    <button class="border py-1 px-3 rounded-md bg-slate-500 text-white cursor-pointer">전송하기</button>
+    <button class="border py-1 px-3 rounded-md bg-amber-500 text-white cursor-wait">저장중</button>
+    <button class="border py-1 px-3 rounded-md bg-green-500 text-white cursor-not-allowed">수정하기</button>
+    <button class="border py-1 px-3 rounded-md bg-red-500 text-white cursor-grab">저를 잡고 이동해주세요</button>
+    <button class="border py-1 px-3 rounded-md bg-slate-500 text-white cursor-auto">일반버튼</button>
+  </div>
+</body>
+</html>
