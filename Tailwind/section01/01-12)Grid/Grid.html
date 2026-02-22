@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Grid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="m-2">
+    <div class="grid gap-3 grid-cols-4">
+      <div
+        class="bg-sky-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        01
+      </div>
+      <div
+        class="bg-sky-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        02
+      </div>
+      <div
+        class="bg-sky-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        03
+      </div>
+      <div
+        class="bg-sky-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        04
+      </div>
+      <div
+        class="bg-sky-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        05
+      </div>
+      <div
+        class="bg-sky-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        06
+      </div>
+      <div
+        class="bg-sky-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        07
+      </div>
+      <div
+        class="bg-sky-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        08
+      </div>
+      <div
+        class="bg-sky-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        09
+      </div>
+    </div>
+    <hr class="my-10" />
+    <!-- Grid Column Start / End -->
+
+    <div class="grid gap-3 grid-cols-3">
+      <div
+        class="bg-purple-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        01
+      </div>
+      <div
+        class="bg-purple-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        02
+      </div>
+      <div
+        class="bg-purple-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        03
+      </div>
+      <div
+        class="bg-purple-900 h-12 text-white font-bold text-center leading-[3rem] rounded-lg col-start-1 col-end-3"
+      >
+        04
+      </div>
+      <div
+        class="bg-purple-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        05
+      </div>
+      <div
+        class="bg-purple-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        06
+      </div>
+      <div
+        class="bg-purple-900 h-12 text-white font-bold text-center leading-[3rem] rounded-lg col-start-2 col-end-4"
+      >
+        07
+      </div>
+      <div
+        class="bg-purple-900 h-12 text-white font-bold text-center leading-[3rem] rounded-lg col-span-full"
+      >
+        08
+      </div>
+    </div>
+    <hr class="my-10" />
+
+    <!-- Grid Col-span -->
+    <div class="grid gap-3 grid-cols-3">
+      <div
+        class="bg-purple-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        01
+      </div>
+      <div
+        class="bg-purple-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        02
+      </div>
+      <div
+        class="bg-purple-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        03
+      </div>
+      <div
+        class="bg-purple-900 h-12 text-white font-bold text-center leading-[3rem] rounded-lg col-span-2"
+      >
+        04
+      </div>
+      <div
+        class="bg-purple-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        05
+      </div>
+      <div
+        class="bg-purple-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        06
+      </div>
+      <div
+        class="bg-purple-900 h-12 text-white font-bold text-center leading-[3rem] rounded-lg col-span-2"
+      >
+        07
+      </div>
+    </div>
+    <hr class="my-10" />
+    <div class="grid gap-3 grid-cols-6">
+      <div
+        class="bg-amber-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg col-start-2 col-span-4"
+      >
+        01
+      </div>
+      <div
+        class="bg-amber-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg col-start-1 col-span-2"
+      >
+        02
+      </div>
+      <div
+        class="bg-amber-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg col-start-5 col-span-2"
+      >
+        03
+      </div>
+      <div
+        class="bg-amber-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg col-span-full"
+      >
+        04
+      </div>
+    </div>
+    <hr class="my-10" />
+    <div class="grid gap-3 grid-rows-4 grid-flow-col">
+      <div
+        class="bg-pink-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        01
+      </div>
+      <div
+        class="bg-pink-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        02
+      </div>
+      <div
+        class="bg-pink-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        03
+      </div>
+      <div
+        class="bg-pink-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        04
+      </div>
+      <div
+        class="bg-pink-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        05
+      </div>
+      <div
+        class="bg-pink-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        06
+      </div>
+      <div
+        class="bg-pink-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        07
+      </div>
+      <div
+        class="bg-pink-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        08
+      </div>
+      <div
+        class="bg-pink-500 h-12 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        09
+      </div>
+    </div>
+    <hr class="my-10" />
+    <div class="grid gap-3 grid-cols-2 grid-rows-4">
+      <div
+        class="bg-cyan-500 text-white font-bold text-center leading-[3rem] rounded-lg row-start-1 row-span-full"
+      >
+        01
+      </div>
+      <div
+        class="bg-cyan-500 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        02
+      </div>
+      <div
+        class="bg-cyan-500 text-white font-bold text-center leading-[3rem] rounded-lg"
+      >
+        03
+      </div>
+    </div>
+  </body>
+</html>

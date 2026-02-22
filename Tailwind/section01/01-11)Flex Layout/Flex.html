@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flex Basic Usage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="m-2">
+    <!--flex 클래스 주면 플렉스 배치 시작-->
+    <div class="flex">
+      <div><em>01</em></div>
+      <div>02</div>
+      <a href="#none">03</a>
+      <span>04</span>
+      <p>05</p>
+      <input type="text" />06
+    </div>
+    <!-- Flex 자식요소 너비 자동 설정 -->
+    <div class="flex gap-3 border-2 border-black">
+      <div
+        class="h-32 bg-blue-500 text-white font-bold rounded-md p-3 shadow-md flex-1"
+      >
+        01
+      </div>
+      <div
+        class="h-32 bg-blue-500 text-white font-bold rounded-md p-3 shadow-md flex-1"
+      >
+        02
+      </div>
+      <div
+        class="h-32 bg-blue-500 text-white font-bold rounded-md p-3 shadow-md flex-1"
+      >
+        03
+      </div>
+    </div>
+    <hr class="my-10" />
+    <div class="flex gap-3 border-2 border-black">
+      <div
+        class="h-32 bg-blue-500 text-white font-bold rounded-md p-3 shadow-md flex-none"
+      >
+        Lorem ipsum.
+      </div>
+      <div
+        class="h-32 bg-blue-500 text-white font-bold rounded-md p-3 shadow-md flex-1"
+      >
+        02
+      </div>
+      <div
+        class="h-32 bg-blue-500 text-white font-bold rounded-md p-3 shadow-md flex-1"
+      >
+        03
+      </div>
+    </div>
+    <hr class="my-10" />
+    <!-- Width 자식 요소 너비 고정 -->
+    <div class="flex gap-3 border-2 border-black flex-col">
+      <div
+        class="h-32 bg-stone-500 text-white font-bold rounded-md p-3 shadow-md w-[300px]"
+      >
+        01
+      </div>
+      <div
+        class="h-32 bg-stone-500 text-white font-bold rounded-md p-3 shadow-md flex-1"
+      >
+        02
+      </div>
+      <div
+        class="h-32 bg-stone-500 text-white font-bold rounded-md p-3 shadow-md flex-1"
+      >
+        03
+      </div>
+    </div>
+    <hr class="my-10" />
+    <!-- Flex Basis 자식요소 너비 고정 설정 -->
+    <div class="flex gap-3 border-2 border-black flex-col">
+      <!-- column 됐을 때 높이가 300이 됨 -->
+      <div
+        class="h-32 bg-lime-500 text-white font-bold rounded-md p-3 shadow-md basis-[300px]"
+      >
+        01
+      </div>
+      <div
+        class="h-32 bg-lime-500 text-white font-bold rounded-md p-3 shadow-md flex-1"
+      >
+        02
+      </div>
+      <div
+        class="h-32 bg-lime-500 text-white font-bold rounded-md p-3 shadow-md flex-1"
+      >
+        03
+      </div>
+    </div>
+    <hr class="my-01" />
+    <div class="flex gap-3 border-2 border-black">
+      <div
+        class="h-32 bg-lime-500 text-white font-bold rounded-md p-3 shadow-md basis-1/2"
+      >
+        01
+      </div>
+      <div
+        class="h-32 bg-lime-500 text-white font-bold rounded-md p-3 shadow-md basis-1/4"
+      >
+        02
+      </div>
+      <div
+        class="h-32 bg-lime-500 text-white font-bold rounded-md p-3 shadow-md basis-1/2"
+      >
+        03
+      </div>
+    </div>
+    <hr class="my-20" />
+    <!-- Flex Grow 자식 요소 너비 비율로 다르게 설정 -->
+    <div class="flex gap-3">
+      <div
+        class="h-16 bg-teal-500 text-white font-bold rounded-md p-3 shadow-md grow-[1]"
+      >
+        01
+      </div>
+      <div
+        class="h-16 bg-teal-500 text-white font-bold rounded-md p-3 shadow-md grow-[18]"
+      >
+        02
+      </div>
+      <div
+        class="h-16 bg-teal-500 text-white font-bold rounded-md p-3 shadow-md grow-[1]"
+      >
+        03
+      </div>
+    </div>
+    <hr class="my-20" />
+    <div class="flex gap-3">
+      <div
+        class="h-16 bg-teal-500 text-white font-bold rounded-md p-3 shadow-md grow-[12]"
+      >
+        01
+      </div>
+      <div
+        class="h-16 bg-teal-500 text-white font-bold rounded-md p-3 shadow-md grow-[2]"
+      >
+        02
+      </div>
+      <div
+        class="h-16 bg-teal-500 text-white font-bold rounded-md p-3 shadow-md grow-[12]"
+      >
+        03
+      </div>
+    </div>
+    <hr class="my-20" />
+    <div class="flex gap-3">
+      <div
+        class="h-16 bg-teal-500 text-white font-bold rounded-md p-3 shadow-md grow-[2]"
+      >
+        01
+      </div>
+      <div
+        class="h-16 bg-teal-500 text-white font-bold rounded-md p-3 shadow-md grow-[1]"
+      >
+        02
+      </div>
+      <div
+        class="h-16 bg-teal-500 text-white font-bold rounded-md p-3 shadow-md grow-[1]"
+      >
+        03
+      </div>
+    </div>
+    <hr class="my-20" />
+    <!-- Gap 자식 요소 간격 -->
+    <div class="flex gap-3 flex-col">
+      <div
+        class="h-16 bg-yellow-500 text-white font-bold rounded-md p-3 shadow-md flex-1"
+      >
+        01
+      </div>
+      <div
+        class="h-16 bg-yellow-500 text-white font-bold rounded-md p-3 shadow-md flex-1"
+      >
+        02
+      </div>
+      <div
+        class="h-16 bg-yellow-500 text-white font-bold rounded-md p-3 shadow-md flex-1"
+      >
+        03
+      </div>
+      <div
+        class="h-16 bg-yellow-500 text-white font-bold rounded-md p-3 shadow-md flex-1 order-last"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sapiente,
+        eaque cumque esse perferendis nostrum! Placeat in exercitationem at quis
+        sapiente officiis minus tenetur, eos consequatur. A eligendi corrupti
+        dolore.
+      </div>
+    </div>
+    <hr class="my-20" />
+    <!-- Flex Direction 자식 요소 배치를 가로 세로 또는 역순으로 -->
+    <div class="flex gap-3 md:flex-row flex-col">
+      <div
+        class="h-16 bg-neutral-500 text-white font-bold rounded-md p-3 shadow-md flex-1"
+      >
+        01
+      </div>
+      <div
+        class="h-16 bg-neutral-500 text-white font-bold rounded-md p-3 shadow-md flex-1"
+      >
+        02
+      </div>
+      <div
+        class="h-16 bg-neutral-500 text-white font-bold rounded-md p-3 shadow-md flex-1"
+      >
+        03
+      </div>
+    </div>
+    <hr class="my-20" />
+    <!-- Flex Wrap 부모 요소 너비에 맞춰 줄 바꿈 여부 결정 -->
+    <div class="flex gap-3 border-2 border-black flex-wrap">
+      <div
+        class="h-16 bg-emerald-500 text-white font-bold rounded-md p-3 shadow-md basis-[300px]"
+      >
+        01
+      </div>
+      <div
+        class="h-16 bg-emerald-500 text-white font-bold rounded-md p-3 shadow-md basis-[300px]"
+      >
+        02
+      </div>
+      <div
+        class="h-16 bg-emerald-500 text-white font-bold rounded-md p-3 shadow-md basis-[300px]"
+      >
+        03
+      </div>
+      <div
+        class="h-16 bg-emerald-500 text-white font-bold rounded-md p-3 shadow-md basis-[300px]"
+      >
+        04
+      </div>
+    </div>
+    <hr class="my-20" />
+  </body>
+</html>
