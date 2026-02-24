@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flex</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body class="m-20">
+    <!-- 한 개 수평정렬 -->
+    <div class="border-4 border-black w-[800px] h-[200px] flex justify-center">
+      <div
+        class="bg-purple-500 text-center text-white w-[200px] h-[50px] leading-[50px] rounded-md"
+      >
+        01
+      </div>
+    </div>
+    <hr class="my-10" />
+    <!-- 한 줄에 여러 개 수평정렬 -->
+    <div class="border-4 border-black w-[800px] flex gap-3 justify-around">
+      <div
+        class="bg-purple-500 text-center text-white w-[100px] h-[50px] leading-[50px] rounded-md"
+      >
+        01
+      </div>
+      <div
+        class="bg-purple-500 text-center text-white w-[100px] h-[50px] leading-[50px] rounded-md"
+      >
+        02
+      </div>
+      <div
+        class="bg-purple-500 text-center text-white w-[100px] h-[50px] leading-[50px] rounded-md"
+      >
+        03
+      </div>
+      <div
+        class="bg-purple-500 text-center text-white w-[100px] h-[50px] leading-[50px] rounded-md"
+      >
+        04
+      </div>
+    </div>
+
+    <hr class="my-10" />
+    <div class="border-4 border-black w-[800px] flex gap-3 justify-between">
+      <div
+        class="bg-purple-500 text-center text-white w-[100px] h-[50px] leading-[50px] rounded-md"
+      >
+        Logo
+      </div>
+      <div
+        class="bg-purple-500 text-center text-white w-[100px] h-[50px] leading-[50px] rounded-md"
+      >
+        Navigation
+      </div>
+    </div>
+
+    <hr class="my-10" />
+
+    <!-- 한 줄에 여러개 수직정렬 -->
+    <div
+      class="border-4 border-black w-[800px] h-[300px] flex gap-3 items-center justify-center"
+    >
+      <div
+        class="bg-purple-500 text-center text-white w-[100px] h-[50px] leading-[50px] rounded-md self-end"
+      >
+        01
+      </div>
+      <div
+        class="bg-purple-500 text-center text-white w-[100px] h-[50px] leading-[50px] rounded-md"
+      >
+        02
+      </div>
+      <div
+        class="bg-purple-500 text-center text-white w-[100px] h-[50px] leading-[50px] rounded-md"
+      >
+        03
+      </div>
+      <div
+        class="bg-purple-500 text-center text-white w-[100px] h-[50px] leading-[50px] rounded-md self-start"
+      >
+        04
+      </div>
+    </div>
+    <hr class="my-10" />
+    <!-- 여러 줄의 수평/수직정렬 -->
+    <div
+      class="border-4 border-black w-[800px] h-[300px] flex gap-3 flex-wrap content-center justify-center"
+    >
+      <div
+        class="bg-purple-500 text-center text-white w-[200px] h-[50px] leading-[50px] rounded-md"
+      >
+        01
+      </div>
+      <div
+        class="bg-purple-500 text-center text-white w-[200px] h-[50px] leading-[50px] rounded-md"
+      >
+        02
+      </div>
+      <div
+        class="bg-purple-500 text-center text-white w-[200px] h-[50px] leading-[50px] rounded-md"
+      >
+        03
+      </div>
+      <div
+        class="bg-purple-500 text-center text-white w-[200px] h-[50px] leading-[50px] rounded-md"
+      >
+        04
+      </div>
+      <div
+        class="bg-purple-500 text-center text-white w-[200px] h-[50px] leading-[50px] rounded-md"
+      >
+        05
+      </div>
+      <div
+        class="bg-purple-500 text-center text-white w-[200px] h-[50px] leading-[50px] rounded-md"
+      >
+        06
+      </div>
+    </div>
+    <hr class="my-10" />
+    <!-- Flex로 부모요소 내 자식요소 센터링(Centering) -->
+    <div
+      class="border-4 border-blue-500 w-[800px] h-[300px] flex justify-center items-center"
+    >
+      <div
+        class="bg-purple-500 text-center text-white w-[200px] h-[50px] rounded-md"
+      >
+        child
+      </div>
+    </div>
+    <hr class="my-10" />
+    <!-- Grid 이용하면 더 간편하게 가능 -->
+    <div
+      class="border-4 border-blue-500 w-[800px] h-[300px] grid place-items-center"
+    >
+      <div
+        class="bg-purple-500 text-center text-white w-[200px] h-[50px] rounded-md"
+      >
+        child
+      </div>
+    </div>
+    <hr class="my-10" />
+    <div
+      class="w-[400px] h-[300px] border p-4 shadow-lg rounded-md flex items-center text-center"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque aliquam
+      vitae natus nam at hic quisquam ipsa sint ipsum!
+    </div>
+    <hr class="my-10" />
+    <div
+      class="border border-black size-[40px] rounded-full flex justify-center items-center cursor-pointer"
+    >
+      <span class="text-3xl hover:rotate-[180deg]"
+        ><i class="bi bi-arrow-down-short"></i
+      ></span>
+    </div>
+  </body>
+</html>
