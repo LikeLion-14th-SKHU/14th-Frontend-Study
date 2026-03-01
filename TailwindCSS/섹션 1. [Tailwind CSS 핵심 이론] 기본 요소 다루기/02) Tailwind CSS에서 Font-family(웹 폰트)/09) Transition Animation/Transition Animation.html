@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Transition & Animation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="m-20">
+    <button class="bg-[#0984e3] text-white px-5 py-2 rounded-md shadow-md">
+      <img
+        class="inline-block mr-[5px] animate-spin"
+        src="../../images/loading.svg"
+      />
+      Loading...
+    </button>
+
+    <hr class="my-10" />
+
+    <button
+      class="bg-white border border-orange-400 px-5 py-2 rounded-md shadow-lg text-orange-400 relative"
+    >
+      <img
+        class="w-[50px] absolute right-[-25px] top-[-25px] animate-ping"
+        src="../../images/dot.svg"
+      />
+      Transaction
+    </button>
+
+    <hr class="my-10" />
+
+    <button
+      class="bg-teal-400 text-white px-5 py-2 rounded-md shadow-md animate-pulse"
+    >
+      Now Saving...
+    </button>
+
+    <hr class="my-10" />
+
+    <div class="border rounded-full size-[40px] shadow-md animate-bounce">
+      <img class="w-10" src="../../images/arrow-down.svg" />
+    </div>
+
+    <!-- <button
+      class="bg-blue-400 text-white py-3 px-5 rounded-xl hover:bg-purple-400 transition-all duration-[500ms] delay-[2000ms]"
+    >
+      Transition Effect
+    </button>
+
+    <hr class="my-10" />
+
+    <button
+      class="bg-blue-400 text-white py-3 px-5 rounded-xl hover:bg-purple-400 hover:rounded-none transition-all duration-[500ms] hover:tracking-widest w-[200px]"
+    >
+      Transition Effect
+    </button> -->
+  </body>
+</html>
