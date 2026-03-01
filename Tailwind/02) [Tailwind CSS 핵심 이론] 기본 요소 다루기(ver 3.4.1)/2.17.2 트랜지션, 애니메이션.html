@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Transitions & Animation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="m-20">
+    <button class="bg-[#0984e3] text-white px-5 py-2 rounded-md shadow-md">
+      <img
+        class="inline-block mr-[5px] animate-spin"
+        src="../images/loading.svg"
+      />Loading...
+    </button>
+
+    <hr class="my-10" />
+
+    <button
+      class="bg-white px-5 py-2 border border-[crimson] rounded-md text-[crimson] shadow-lg relative"
+    >
+      <img
+        class="w-[50px] absolute right-[-25px] top-[-25px] animate-ping"
+        src="../images/dot.svg"
+      />
+      Transaction
+    </button>
+
+    <hr class="my-10" />
+
+    <button
+      class="bg-teal-500 text-white px-5 py-2 rounded-md shadow-md animate-pulse"
+    >
+      Now Saving...
+    </button>
+
+    <hr class="my-10" />
+
+    <div class="border size-[40px] rounded-full shadow-md animate-bounce">
+      <img class="w-10" src="../images/arrow-down.svg" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Grid Basic Usage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="m-2">
+    <!-- Grid Template Rows - 그리드 열(가로) 개수-->
+    <div class="grid gap-3 grid-rows-4 grid-flow-col">
+      <div class="text-white bg-pink-500 rounded-md text-center h-12 leading-[3rem] font-bold">01</div>
+      <div class="text-white bg-pink-500 rounded-md text-center h-12 leading-[3rem] font-bold">02</div>
+      <div class="text-white bg-pink-500 rounded-md text-center h-12 leading-[3rem] font-bold">03</div>
+      <div class="text-white bg-pink-500 rounded-md text-center h-12 leading-[3rem] font-bold">04</div>
+      <div class="text-white bg-pink-500 rounded-md text-center h-12 leading-[3rem] font-bold">05</div>
+      <div class="text-white bg-pink-500 rounded-md text-center h-12 leading-[3rem] font-bold">06</div>
+      <div class="text-white bg-pink-500 rounded-md text-center h-12 leading-[3rem] font-bold">07</div>
+      <div class="text-white bg-pink-500 rounded-md text-center h-12 leading-[3rem] font-bold">08</div>
+      <div class="text-white bg-pink-500 rounded-md text-center h-12 leading-[3rem] font-bold">09</div>
+    </div>
+
+    <hr class="my-10" />
+
+    <!-- Grid Row Span / start / End - 열 (가로) 확장 / 시작/종료 -->
+    <div class="grid gap-3 grid-cols-2 grid-rows-4">
+      <div class="text-white bg-cyan-500 rounded-md text-center leading-[3rem] font-bold row-span-4">01</div>
+      <div class="text-white bg-cyan-500 rounded-md text-center leading-[3rem] font-bold">02</div>
+      <div class="text-white bg-cyan-500 rounded-md text-center leading-[3rem] font-bold row-span-3">03</div>
+    </div>
+
+    <hr class="my-10" />
+
+    <!-- Starting and ending lins-->
+    <div class="grid gap-3 grid-rows-3 grid-flow-col">
+      <div class="p-5 text-white bg-blue-500 rounded-md text-center leading-[3rem] font-bold row-start-2 row-span-2">
+        01
+      </div>
+      <div class="p-5 text-white bg-blue-500 rounded-md text-center leading-[3rem] font-bold row-start-1 row-span-2">
+        02
+      </div>
+      <div class="p-5 text-white bg-blue-500 rounded-md text-center leading-[3rem] font-bold row-start-1 row-span-full">
+        03
+      </div>
+    </div>
+  </body>
+</html>
