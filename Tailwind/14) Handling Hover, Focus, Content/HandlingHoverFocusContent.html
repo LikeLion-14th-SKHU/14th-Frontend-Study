@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS CDN</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="m-20">
+  <!-- Hover -->
+  <button class="bg-orange-400 text-white p-2 px-5 rounded-full hover:bg-orange-600">
+    자세히 보기
+  </button>
+
+  <hr class="my-10" />
+
+  <!-- Focus -->
+  <button class="bg-sky-400 text-white p-2 px-5 rounded-full focus:ring-red-600 focus:ring">
+    회원정보 변경하기
+  </button>
+
+  <hr class="my-10" />
+
+  <!-- Active -->
+  <button class="bg-slate-400 text-white p-2 px-5 rounded-full active:bg-green-400">
+    변경사항 저장하기
+  </button>
+
+  <hr class="my-10" />
+
+  <button class="bg-slate-400 text-white p-2 px-5 rounded-full active:scale-[0.9] transition-all duration-[300ms] shadow-lg active:shadow-none">
+    변경사항 저장하기
+  </button>
+
+  <hr class="my-10" />
+
+  <a class="before:content-['New'] before:text-[12px] before:bg-blue-400 before:text-white before:px-1 before:mr-1 before:rounded-md after:content-['update'] after:bg-[crimson] after:text-white after:rounded-full after:px-2 after:uppercase after:ml-2 after:text-[12px]" href="#none">
+    Kumquatree Class
+  </a>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS CDN</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="m-2">
+  <!-- flex 클래스 (마진이 없는 인라인 블록으로 display 속성이 변경되면서 가로로 배치)-->
+   <div class="flex">
+    <div>01</div>
+    <div>02</div>
+    <a href="#none">03</a>
+    <span>04</span>
+    <p>05</p>
+    <input type="text">06
+   </div>
+   <!-- flex - 자식요소 너비 자동 설정 -->
+    <div class="flex gap-3">
+      <div class="h-32 bg-blue-500 text-white font-bold rounded-md p-3 shadow-md">01</div>
+      <div class="h-32 bg-blue-500 text-white font-bold rounded-md p-3 shadow-md">02</div>
+      <div class="h-32 bg-blue-500 text-white font-bold rounded-md p-3 shadow-md">03</div>
+    </div>
+</body>
+</html>

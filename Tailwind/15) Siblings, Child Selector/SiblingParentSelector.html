@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS CDN</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- <style>
+      .msg {
+      }
+
+      .msg p {
+        display: none;
+      }
+
+      .msg:hover p {
+        display: block;
+      }
+
+      .msg h1:hover + p {
+        display: block;
+      }
+    </style> -->
+</head>
+<body class="m-20 bg-amber-200">
+  <!-- 부모 선택자(Group) -->
+  <div class="group">
+    <h1 class="bg-slate-500 text-white p-3 rounded-md shadow-md">
+      부모선택자(group)
+    </h1>
+    <p class="bg-white p-4 rounded-lg shadow-md mt-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat totam mollitia impedit blanditiis ipsa nesciunt quasi vel vero voluptatibus? Similique, quibusdam enim voluptatum sunt alias modi repellat consequatur quo laudantium!
+    </p>
+  </div>
+
+  <!-- 형제 선택자(Peer) -->
+  <div>
+    <h1 class="bg-pink-500 text-white p-3 rounded-md shadow-md peer">
+      형제선택자(peer)
+    </h1>
+    <p class="bg-white p-4 rounded-lg shadow-md mt-2 hidden peer-hover:block">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid consequatur nihil vero earum, dolores officiis quas doloribus quis rerum repellat mollitia fugiat perspiciatis tenetur consequuntur ipsum quibusdam cum. Qui, adipisci.
+    </p>
+  </div>
+
+  <!-- 일반 CSS 방식 -->
+  <!-- <div class="msg">
+    <h1 class="bg-pink-500 text-white p-3 rounded-md shadow-md">
+      형제선택자(peer)
+    </h1>
+    <p class="bg-white p-4 rounded-lg shadow-md mt-2 hidden">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro mollitia optio sit consequatur, dignissimos voluptatibus ullam officia placeat, harum repudiandae tempore asperiores doloribus saepe, labore ad? Quos illum accusamus doloribus?
+    </p>
+  </div> -->
+</body>
+</html>
